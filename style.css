@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  text-transform: capitalize;
   text-decoration: none;
 } 
 body {
@@ -233,7 +232,6 @@ h2{
 .width-33 
 {
     width: 100%;
-    float: right;
     margin-right: 10px;
     margin-left: 5px;
 }
@@ -241,11 +239,10 @@ h2{
 .width-44 
 {
     width: 100%;
-    float: left;
 }
 .latest-news
 {
-    width: 50%;
+    width: 100%;
     margin-left: 10px;
     margin-right: 10px;
     background: #fff;
@@ -264,9 +261,9 @@ h2{
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
-    border: 1px solid #cfcfcf;
-    background: #fff;
-    color: #313131;
+    border: 2px solid #999999;
+    background: #fffbfb;
+    color: #000000;
 }
 .head-tittle
 {
@@ -295,7 +292,7 @@ h2{
 .latest-updates-ul li
 {
   list-style: none;
-    border-bottom: 1px dotted rgb(75, 75, 75);
+    border-bottom: 2px dotted rgb(75, 75, 75);
 }
 .latest-updates-ul li:last-child
 {
