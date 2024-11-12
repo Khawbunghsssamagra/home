@@ -168,8 +168,8 @@ h1{
 
 
 .container{
-  width: 95%;
-  margin-left: 20px;
+  width: 90vw;
+  margin-left: 10px;
 }
 h2{
   color: #C59F61;
@@ -231,14 +231,14 @@ h2{
 }
 .width-33 
 {
-    width: 100%;
-    margin-right: 10px;
+    width: 90vw;
+    margin-right: 5px;
     margin-left: 5px;
 }
 
 .width-44 
 {
-    width: 100%;
+    width: 90vw;
 }
 .latest-news
 {
@@ -304,12 +304,12 @@ border-bottom: none;
 .footericon {
   padding-top: 35px;
   margin-top: 20px;
-  width: 100%;
+  width: 90vw;
   background: #232f3e;
 }
 
 .footercopyright {
-  width: 100%;
+  width: 90vw;
   background: #232f3e;
   color: #fff;
   padding-top: 16px;
