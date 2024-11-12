@@ -1,113 +1,131 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/@codingnepal -->
+<!-- Created By CodingNepal -->
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khawbung Senior Secondary School</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Linking Google fonts for icons -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
-</head>
-<body>
-  <aside class="sidebar">
-    <!-- Sidebar header -->
-    <header class="sidebar-header">
-      <a href="#" class="header-logo">
-        <img src="logo.jpg" alt="KSSS">
-      </a>
-      <button class="toggler sidebar-toggler">
-        <span class="material-symbols-rounded">chevron_left</span>
-      </button>
-      <button class="toggler menu-toggler">
-        <span class="material-symbols-rounded">menu</span>
-      </button>
+   <head>
+      <meta charset="utf-8">
+      <title>Khawbung Senior Secondary School</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+      <!-- Linking Google fonts for icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+
+    <header>
+        <a href="#" class="header-logo">
+            <img src="logo1.jpg" alt="KSSS">
+          </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><span class="material-symbols-rounded">menu</span></label>
+
+        <nav class="navbar">
+         <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About Us +</a>
+                <ul>
+                    <li><a href="#">Principal</a></li>
+                    <li><a href="#">Teaching Staff</a></li>
+                </ul>
+            </li>
+            <li><a href="#">LogIn +</a>
+                <ul>
+                    <li><a href="#">For Teachers</a></li>
+                    <li><a href="#">For Studernts</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About School +</a>
+                <ul>
+                    <li><a href="#">Establishment</a></li>
+                    <li><a href="#">Rules & Regulations</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Notice</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+      </nav>
     </header>
+    <section>
+        <h1>Khawbung Senior Secondary School
+        <p><span class="sub">Khawbung, Mizoram - 796320</span></p>
+        <P><img src="logo.png" width="120px" height="75px"></P></h1>
+    </section>
 
-    <nav class="sidebar-nav">
-      <!-- Primary top nav -->
-      <ul class="nav-list primary-nav">
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <span class="material-symbols-outlined">home</span>
-            <span class="nav-label">Home</span>
-          </a>
-          <span class="nav-tooltip">Home</span>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <span class="material-symbols-rounded">groups</span>
-            <span class="nav-label">About Us<span class="material-symbols-rounded">arrow_drop_down</span></span>
-          </a>
-          <span class="nav-tooltip">About Us</span>
-              <ul class="sub-menu">
-                <li class="nav-item"><a href="#" class="nav-link"><span class="nav-label">Principal</span></a>
-                  <span class="nav-tooltip">Principal</span>
-                </li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="nav-label">Teaching Staff</span></a>
-                  <span class="nav-tooltip">Teaching Staff</span>
-                </li>
-              </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <span class="material-symbols-rounded">
-              power_settings_new
-              </span>
-            <span class="nav-label">LogIn<span class="material-symbols-rounded">arrow_drop_down</span></span>
-          </a>
-          <span class="nav-tooltip">LogIn</span>
-          <ul class="sub-menu">
-            <li class="nav-item"><a href="#" class="nav-link"><span class="material-symbols-rounded">group</span><span class="nav-label">For Teachers</span></a>
-              <span class="nav-tooltip">For Teachers</span>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link"><span class="material-symbols-rounded">diversity_3</span><span class="nav-label">For Students</span></a>
-              <span class="nav-tooltip">For Students</span>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <span class="nav-icon material-symbols-rounded">home_work</span>
-            <span class="nav-label">About School<span class="material-symbols-rounded">arrow_drop_down</span></span>
-          </a>
-          <span class="nav-tooltip">About School</span>
-          <ul class="sub-menu">
-            <li class="nav-item"><a href="#" class="nav-link"><span class="nav-label">Establishment</span></a>
-              <span class="nav-tooltip">Establishment</span>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link"><span class="nav-label">Rules & Regulations</span></a>
-              <span class="nav-tooltip">Rules & Regulations</span>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <span class="nav-icon material-symbols-rounded">assignment</span>
-            <span class="nav-label">Notice</span>
-          </a>
-          <span class="nav-tooltip">Notice</span>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <span class="nav-icon material-symbols-rounded">imagesmode</span>
-            <span class="nav-label">Gallery</span>
-          </a>
-          <span class="nav-tooltip">Gallery</span>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <span class="nav-icon material-symbols-rounded">headset_mic</span>
-            <span class="nav-label">Conatct Us</span>
-          </a>
-          <span class="nav-tooltip">Contact Us</span>
-        </li>
-      </ul>
-    </nav>
-  </aside>
+    <div class="container">
+        <h2></h2>
+        <button class="accordion">About School</button>
+        <div class="panel">
+            <p><strong>Khawbung Senior Secondary School</strong> was established in 2023 and it is managed by Samagra Shiksha (RMSA). It is located in Vanzau block of Champhai District, Mizoram. It consists of Grades from 11 to 12 (Science Stream).</p>
+        </div>
+        <button class="accordion">Subject Offer</button>
+        <div class="panel">
+            <p>English</p>
+            <p>Mizo</p>
+            <p>Physics</p>
+            <p>Chemistry</p>
+            <p>Biology</p>
+            <p>Mathematics</p>
+        </div>
+    </div>
 
-  <!-- Script -->
-  <script src="script.js"></script>
-</body>
+
+    <div class="width-50 margin-top-50"></div>
+    <div class="container">
+    <div class="width-44">
+    <div class="heading-sect">
+    <h3 class="head-tittle">Notifications</h3>
+    </div>
+    <div class="heading-sect"><img src="Announcements-color.svg" height="60px" width="60px">
+    <marquee scrollamount="2" direction="up">
+        <ul class="latest-updates-ul">
+            <li><img src="icon-pointfingure.png" width="28px" height="15px">Second Terminal Examination Result, 2024 </span><img src="newimg.gif">
+            </li>
+            <li>
+                <html>
+                <a href="Extra Class.pdf"><span class="noti-tittle"><img src="icon-link.png" width="28px" height="15px">Extra Class for Class-XII (Science) </a>
+                </html>
+            </li>
+            <li><img src="icon-pointfingure.png" width="28px" height="15px">First Terminal Examination Result, 2024
+
+            </li>
+            <li><img src="icon-pointfingure.png" width="28px" height="15px">Selected candidates for Admission into Class-XI Science, 2024-25
+
+            </li>
+            <li><img src="icon-pointfingure.png" width="28px" height="15px">Admission Notice for Class-XI Science, 2024-25
+
+            </li>
+            <li><img src="icon-pointfingure.png" width="28px" height="15px">Selected Candidates for admission into class-XII(Sc), 2024-25
+
+            </li>
+            <li><img src="icon-pointfingure.png" width="28px" height="15px">Admission Notice for Class-XII Science, 2024-25
+
+            </li>
+         </ul>
+    </marquee>
+    </div>
+</div>
+
+
+   </body>
 </html>
+
+
+
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active1");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
