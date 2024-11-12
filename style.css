@@ -168,7 +168,7 @@ h1{
 
 
 .container{
-  width: 90vw;
+  width: 93vw;
   margin-left: 10px;
 }
 h2{
@@ -231,14 +231,14 @@ h2{
 }
 .width-33 
 {
-    width: 90vw;
+    width: 93vw;
     margin-right: 5px;
     margin-left: 5px;
 }
 
 .width-44 
 {
-    width: 90vw;
+    width: 93vw;
 }
 .latest-news
 {
@@ -304,12 +304,12 @@ border-bottom: none;
 .footericon {
   padding-top: 35px;
   margin-top: 20px;
-  width: 90vw;
+  width: 93vw;
   background: #232f3e;
 }
 
 .footercopyright {
-  width: 90vw;
+  width: 93vw;
   background: #232f3e;
   color: #fff;
   padding-top: 16px;
