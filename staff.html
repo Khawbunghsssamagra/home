@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>About Us</title>
+      <link rel="stylesheet" href="staff.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+      <!-- Linking Google fonts for icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+
+    <header>
+        <a href="#" class="header-logo">
+            <img src="logo1.jpg" alt="KSSS">
+          </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><span class="material-symbols-rounded">menu</span>Menu</label>
+
+        <nav class="navbar">
+         <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="estd.html">About Us +</a>
+                <ul>
+                    <li><a href="principal.html">Principal</a></li>
+                    <li><a href="staff.html">Teaching Staff</a></li>
+                </ul>
+            </li>
+            <li><a href="#">LogIn +</a>
+                <ul>
+                    <li><a href="https://script.google.com/macros/s/AKfycbyjbcXJtEiWC_wrS45Ma4HShDf-La_mvIOnEejW_XVEY1oIsH8e7yRh51ntSYB3FZ7QWw/exec" target="_blank" title="Login for Teachers">For Teachers</a></li>
+                    <li><a href="https://script.google.com/macros/s/AKfycbzt9jy3Wvp8ixU72xo3OJSDmkise2mIR8sjF6hJZM5tLhDpfdtq7kXxegIOG03uTKKBSg/exec" target="_blank" title="Login for Students">For Studernts</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About School +</a>
+                <ul>
+                    <li><a href="estd.html">Establishment</a></li>
+                    <li><a href="rr.html">Rules & Regulations</a></li>
+                </ul>
+            </li>
+            <li><a href="notice.html">Notice</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+         </ul>
+      </nav>
+    </header>
+
+    <br><br><br><br><br>
+
+<!----Staff-1-->
+    <div class="main">
+        <h1>Teaching Staff</h1>
+        <br>
+		<div class="container">
+
+			<div class="left"></div>
+			<div class="right">
+				<div class="tab">
+					<button class="tablinks" onclick="openCity(event, 'History')">Name</button>
+					<button class="tablinks" onclick="openCity(event, 'Vision')">Qualification</button>
+					<button class="tablinks" onclick="openCity(event, 'Goals')">Contact</button>
+				</div>
+				<div id="History" class="tabcontent">
+					<h3></h3>
+                    <br>
+					<p><strong>Vanmalsawmi</strong></p>
+                    <p>Designation : English Lecturer</p>
+				</div>
+				<div id="Vision" class="tabcontent">
+					<h3>Qualification</h3>
+                    <br>
+					<p>M.A.(English), B.Ed.</p>
+				</div>
+				<div id="Goals" class="tabcontent">
+					<h3>Contact</h3>
+                    <br>
+					<p>Ph. : 7005313262</p>
+                    <p>email : </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        
+        </script>
+
+
+<!----Staff-2-->
+    <div class="main2">
+        <br>
+		<div class="container2">
+
+			<div class="left2"></div>
+			<div class="right2">
+				<div class="tab2">
+					<button class="tablinks2" onclick="openCity2(event, 'History2')">Name</button>
+					<button class="tablinks2" onclick="openCity2(event, 'Vision2')">Qualification</button>
+					<button class="tablinks2" onclick="openCity2(event, 'Goals2')">Contact</button>
+				</div>
+				<div id="History2" class="tabcontent2">
+					<h3></h3>
+                    <br>
+					<p><strong>Lungtiawii Chhungte</strong></p>
+                    <p>Designation : Mizo Lecturer</p>
+				</div>
+				<div id="Vision2" class="tabcontent2">
+					<h3>Qualification</h3>
+                    <br>
+					<p>M.A.(Mizo), B.Ed.</p>
+				</div>
+				<div id="Goals2" class="tabcontent2">
+					<h3>Contact</h3>
+                    <br>
+					<p>Ph. : 6009234939</p>
+                    <p>email : </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script>
+    function openCity2(evt, cityName) {
+        var i, tabcontent2, tablinks2;
+        tabcontent2 = document.getElementsByClassName("tabcontent2");
+        for (i = 0; i < tabcontent2.length; i++) {
+            tabcontent2[i].style.display = "none";
+        }
+        tablinks2 = document.getElementsByClassName("tablinks2");
+        for (i = 0; i < tablinks2.length; i++) {
+            tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    
+    </script>
+
+
+<!----Staff-phy(7)-->
+<div class="main7">
+    <br>
+    <div class="container7">
+
+        <div class="left7"></div>
+        <div class="right7">
+            <div class="tab7">
+                <button class="tablinks7" onclick="openCity7(event, 'History7')">Name</button>
+                <button class="tablinks7" onclick="openCity7(event, 'Vision7')">Qualification</button>
+                <button class="tablinks7" onclick="openCity7(event, 'Goals7')">Contact</button>
+            </div>
+            <div id="History7" class="tabcontent7">
+                <h3></h3>
+                <br>
+                <p><strong>Chhuanthanga</strong></p>
+                <p>Designation : Physics Lecturer</p>
+            </div>
+            <div id="Vision7" class="tabcontent7">
+                <h3>Qualification</h3>
+                <br>
+                <p>M.Sc.(Physics), B.Ed.</p>
+            </div>
+            <div id="Goals7" class="tabcontent7">
+                <h3>Contact</h3>
+                <br>
+                <p>Ph. : 8259951848</p>
+                <p>email : </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openCity7(evt, cityName) {
+        var i, tabcontent7, tablinks7;
+        tabcontent7 = document.getElementsByClassName("tabcontent7");
+        for (i = 0; i < tabcontent7.length; i++) {
+            tabcontent7[i].style.display = "none";
+        }
+        tablinks7 = document.getElementsByClassName("tablinks7");
+        for (i = 0; i < tablinks7.length; i++) {
+            tablinks7[i].className = tablinks7[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    
+    </script>
+
+
+<!----Staff-3-->
+<div class="main3">
+    <br>
+    <div class="container3">
+
+        <div class="left3"></div>
+        <div class="right3">
+            <div class="tab3">
+                <button class="tablinks3" onclick="openCity3(event, 'History3')">Name</button>
+                <button class="tablinks3" onclick="openCity3(event, 'Vision3')">Qualification</button>
+                <button class="tablinks3" onclick="openCity3(event, 'Goals3')">Contact</button>
+            </div>
+            <div id="History3" class="tabcontent3">
+                <h3></h3>
+                <br>
+                <p><strong>C. Lalnuntluanga</strong></p>
+                <p>Designation : Chemistry Lecturer</p>
+            </div>
+            <div id="Vision3" class="tabcontent3">
+                <h3>Qualification</h3>
+                <br>
+                <p>M.Sc.(Chemistry) B.Ed.</p>
+            </div>
+            <div id="Goals3" class="tabcontent3">
+                <h3>Contact</h3>
+                <br>
+                <p>Ph. : </p>
+                <p>email : </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openCity3(evt, cityName) {
+        var i, tabcontent3, tablinks3;
+        tabcontent3 = document.getElementsByClassName("tabcontent3");
+        for (i = 0; i < tabcontent3.length; i++) {
+            tabcontent3[i].style.display = "none";
+        }
+        tablinks3 = document.getElementsByClassName("tablinks3");
+        for (i = 0; i < tablinks3.length; i++) {
+            tablinks3[i].className = tablinks3[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    
+    </script>
+
+
+
+
+<!----Staff-4-->
+<div class="main4">
+    <br>
+    <div class="container4">
+
+        <div class="left4"></div>
+        <div class="right4">
+            <div class="tab4">
+                <button class="tablinks4" onclick="openCity4(event, 'History4')">Name</button>
+                <button class="tablinks4" onclick="openCity4(event, 'Vision4')">Qualification</button>
+                <button class="tablinks4" onclick="openCity4(event, 'Goals4')">Contact</button>
+            </div>
+            <div id="History4" class="tabcontent4">
+                <h3></h3>
+                <br>
+                <p><strong>Lalsiamchhungi</strong></p>
+                <p>Designation : Botony Lecturer</p>
+            </div>
+            <div id="Vision4" class="tabcontent4">
+                <h3>Qualification</h3>
+                <br>
+                <p>M.Sc.(Botany), B.Ed.</p>
+            </div>
+            <div id="Goals4" class="tabcontent4">
+                <h3>Contact</h3>
+                <br>
+                <p>Ph. : 9774745827</p>
+                <p>email : </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openCity4(evt, cityName) {
+        var i, tabcontent4, tablinks4;
+        tabcontent4 = document.getElementsByClassName("tabcontent4");
+        for (i = 0; i < tabcontent4.length; i++) {
+            tabcontent4[i].style.display = "none";
+        }
+        tablinks4 = document.getElementsByClassName("tablinks4");
+        for (i = 0; i < tablinks4.length; i++) {
+            tablinks4[i].className = tablinks4[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    
+    </script>
+
+
+
+<!----Staff-5-->
+<div class="main5">
+    <br>
+    <div class="container5">
+
+        <div class="left5"></div>
+        <div class="right5">
+            <div class="tab5">
+                <button class="tablinks5" onclick="openCity5(event, 'History5')">Name</button>
+                <button class="tablinks5" onclick="openCity5(event, 'Vision5')">Qualification</button>
+                <button class="tablinks5" onclick="openCity5(event, 'Goals5')">Contact</button>
+            </div>
+            <div id="History5" class="tabcontent5">
+                <h3></h3>
+                <br>
+                <p><strong>C. Lalremsanga</strong></p>
+                <p>Designation : Zoology Lecturer</p>
+            </div>
+            <div id="Vision5" class="tabcontent5">
+                <h3>Qualification</h3>
+                <br>
+                <p>M.Sc.(Zoology), B.Ed.</p>
+            </div>
+            <div id="Goals5" class="tabcontent5">
+                <h3>Contact</h3>
+                <br>
+                <p>Ph. : 9774554507/9362217167</p>
+                <p>email : </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openCity5(evt, cityName) {
+        var i, tabcontent5, tablinks5;
+        tabcontent5 = document.getElementsByClassName("tabcontent5");
+        for (i = 0; i < tabcontent5.length; i++) {
+            tabcontent5[i].style.display = "none";
+        }
+        tablinks5 = document.getElementsByClassName("tablinks5");
+        for (i = 0; i < tablinks5.length; i++) {
+            tablinks5[i].className = tablinks5[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    
+    </script>
+
+
+<!----Staff-6-->
+<div class="main6">
+    <br>
+    <div class="container6">
+
+        <div class="left6"></div>
+        <div class="right6">
+            <div class="tab6">
+                <button class="tablinks6" onclick="openCity6(event, 'History6')">Name</button>
+                <button class="tablinks6" onclick="openCity6(event, 'Vision6')">Qualification</button>
+                <button class="tablinks6" onclick="openCity6(event, 'Goals6')">Contact</button>
+            </div>
+            <div id="History6" class="tabcontent6">
+                <h3></h3>
+                <br>
+                <p><strong>Vanlalengzauva</strong></p>
+                <p>Designation : Mathematics Lecturer</p>
+            </div>
+            <div id="Vision6" class="tabcontent6">
+                <h3>Qualification</h3>
+                <br>
+                <p>M.Sc.(Mathematics), B.Ed.</p>
+            </div>
+            <div id="Goals6" class="tabcontent6">
+                <h3>Contact</h3>
+                <br>
+                <p>Ph. : 8119870507</p>
+                <p>email : </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openCity6(evt, cityName) {
+        var i, tabcontent6, tablinks6;
+        tabcontent6 = document.getElementsByClassName("tabcontent6");
+        for (i = 0; i < tabcontent6.length; i++) {
+            tabcontent6[i].style.display = "none";
+        }
+        tablinks6 = document.getElementsByClassName("tablinks6");
+        for (i = 0; i < tablinks6.length; i++) {
+            tablinks6[i].className = tablinks6[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    
+    </script>
+
+
+
+<div class="footercopyright"><center>Copyright &copy; Khawbung Senior Secondary School 2023. All rights reserved.</center></center></div>

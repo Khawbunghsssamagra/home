@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>About Us</title>
+      <link rel="stylesheet" href="principal.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+      <!-- Linking Google fonts for icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+
+    <header>
+        <a href="#" class="header-logo">
+            <img src="logo1.jpg" alt="KSSS">
+          </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><span class="material-symbols-rounded">menu</span>Menu</label>
+
+        <nav class="navbar">
+         <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="estd.html">About Us +</a>
+                <ul>
+                    <li><a href="principal.html">Principal</a></li>
+                    <li><a href="staff.html">Teaching Staff</a></li>
+                </ul>
+            </li>
+            <li><a href="#">LogIn +</a>
+                <ul>
+                    <li><a href="https://script.google.com/macros/s/AKfycbyjbcXJtEiWC_wrS45Ma4HShDf-La_mvIOnEejW_XVEY1oIsH8e7yRh51ntSYB3FZ7QWw/exec" target="_blank" title="Login for Teachers">For Teachers</a></li>
+                    <li><a href="https://script.google.com/macros/s/AKfycbzt9jy3Wvp8ixU72xo3OJSDmkise2mIR8sjF6hJZM5tLhDpfdtq7kXxegIOG03uTKKBSg/exec" target="_blank" title="Login for Students">For Studernts</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About School +</a>
+                <ul>
+                    <li><a href="estd.html">Establishment</a></li>
+                    <li><a href="rr.html">Rules & Regulations</a></li>
+                </ul>
+            </li>
+            <li><a href="notice.html">Notice</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+         </ul>
+      </nav>
+    </header>
+
+    <br><br><br><br><br>
+
+    <div class="main">
+		<h1>Principal</h1>
+        <br>
+		<div class="container">
+
+			<div class="left"></div>
+			<div class="right">
+				<div class="tab">
+					<button class="tablinks" onclick="openCity(event, 'History')">Name</button>
+					<button class="tablinks" onclick="openCity(event, 'Vision')">Qualification</button>
+					<button class="tablinks" onclick="openCity(event, 'Goals')">Contact</button>
+				</div>
+				<div id="History" class="tabcontent">
+					<h3></h3>
+                    <br>
+					<p><strong>Chhuanthanga</strong></p>
+                    <p>Designation : Principal (2023 - )</p>
+				</div>
+				<div id="Vision" class="tabcontent">
+					<h3>Qualification</h3>
+                    <br>
+					<p>M.Sc.(Physics), B.Ed.</p>
+				</div>
+				<div id="Goals" class="tabcontent">
+					<h3>Contact</h3>
+                    <br>
+					<p>Ph. : 8259951848</p>
+                    <p>email : chhuanthanga1999@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+   </body>
+</html>
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+	document.getElementById(cityName).style.display = "block";
+	evt.currentTarget.className += " active";
+}
+
+</script>

@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+} 
+body {
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+.header-logo img {
+  width: 46px;
+  height: 46px;
+  display: block;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #0c0079;
+  box-shadow: 2px 2px 35px 2px #adad1c;
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo {
+  font-weight: bolder;
+  font-size: 25px;
+  color: #fff;
+
+}
+
+header .navbar ul{
+  list-style: none;
+  color: #fff;
+}
+
+header .navbar ul li{
+  position: relative;
+  float: left;
+  color: #fff;
+}
+
+header .navbar ul li a{
+  font-size: 20px;
+  padding: 20px;
+  color: #fff;
+  display: block;
+}
+
+header .navbar ul li a:hover{
+  background: #007e8f;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+header .navbar ul li ul{
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #0a0066;
+  display: none;
+}
+
+header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+}
+header .navbar ul li ul li ul{
+  left: 200px;
+  top: 0;
+}
+header .navbar ul li:focus-within > ul, 
+header .navbar ul li:hover > ul{
+  display: initial;
+}
+
+#menu-bar {
+  display: none;
+}
+header label{
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+
+@media(max-width:991px){
+  header{
+    padding: 20px;
+  }
+
+  header label{
+    display: initial;
+  }
+
+  header .navbar{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: #0c0079;
+    border-top: 2px solid #ffffff;
+    display: none;
+  }
+
+  header .navbar ul li{
+    width: 100%;
+    text-align: center;
+  }
+
+  header .navbar ul li ul{
+    position: relative;
+    width: 100%;
+  }
+
+  header .navbar ul li ul li{
+    background: #256600;
+  }
+
+  header .navbar ul li ul li ul{
+    width: 100%;
+    left: 0;
+  }
+
+  #menu-bar:checked ~ .navbar{
+    display: initial;
+  }
+
+}
+
+
+
+
+/////Staff-1
+.main{
+	background-color: azure;
+	width: 97%;
+	padding: 10px 50px 50px 50px;
+	border-radius: 5px;
+}
+.main>h1,.main>p {
+	text-align: center;
+}
+.main>p {
+	margin: -20px 0 40px 0;
+}
+.container {
+	display: flex;
+	gap: 30px;
+}
+.left {
+	width: 30%;
+	height: auto;
+	background-image: url("") !important;
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center;
+	background-color: aliceblue;
+}
+.right {
+	width: 70%;
+}
+.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	border-radius: 5px 5px 0 0;
+}
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+.tab button:hover {
+	background-color: #ddd;
+}
+.tab button.active {
+	background-color: #ccc;
+}
+.tabcontent {
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: white;
+	border-radius: 0 0 5px 5px;
+}
+#Vision,#Goals {
+	display: none;
+}
+
+
+/////Staff-2
+.main2{
+	background-color: azure;
+	width: 97%;
+	padding: 10px 50px 50px 50px;
+	border-radius: 5px;
+}
+.main2>h1,.main>p {
+	text-align: center;
+}
+.main2>p {
+	margin: -20px 0 40px 0;
+}
+.container2 {
+	display: flex;
+	gap: 30px;
+}
+.left2 {
+	width: 30%;
+	height: auto;
+	background-image: url("") !important;
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center;
+	background-color: aliceblue;
+}
+.right2 {
+	width: 70%;
+}
+.tab2 {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	border-radius: 5px 5px 0 0;
+}
+.tab2 button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+.tab2 button:hover {
+	background-color: #ddd;
+}
+.tab2 button.active {
+	background-color: #ccc;
+}
+.tabcontent2 {
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: white;
+	border-radius: 0 0 5px 5px;
+}
+#Vision2,#Goals2 {
+	display: none;
+}
+
+
+/////Staff-phy(7)
+.main7{
+	background-color: azure;
+	width: 97%;
+	padding: 10px 50px 50px 50px;
+	border-radius: 5px;
+}
+.main7>h1,.main7>p {
+	text-align: center;
+}
+.main7>p {
+	margin: -20px 0 40px 0;
+}
+.container7 {
+	display: flex;
+	gap: 30px;
+}
+.left7 {
+	width: 30%;
+	height: auto;
+	background-image: url("") !important;
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center;
+	background-color: aliceblue;
+}
+.right7 {
+	width: 70%;
+}
+.tab7 {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	border-radius: 5px 5px 0 0;
+}
+.tab7 button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+.tab7 button:hover {
+	background-color: #ddd;
+}
+.tab7 button.active {
+	background-color: #ccc;
+}
+.tabcontent7 {
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: white;
+	border-radius: 0 0 5px 5px;
+}
+#Vision7,#Goals7 {
+	display: none;
+}
+
+
+
+/////Staff-3
+.main3{
+	background-color: azure;
+	width: 97%;
+	padding: 10px 50px 50px 50px;
+	border-radius: 5px;
+}
+.main3>h1,.main3>p {
+	text-align: center;
+}
+.main3>p {
+	margin: -20px 0 40px 0;
+}
+.container3 {
+	display: flex;
+	gap: 30px;
+}
+.left3 {
+	width: 30%;
+	height: auto;
+	background-image: url("") !important;
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center;
+	background-color: aliceblue;
+}
+.right3 {
+	width: 70%;
+}
+.tab3 {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	border-radius: 5px 5px 0 0;
+}
+.tab3 button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+.tab3 button:hover {
+	background-color: #ddd;
+}
+.tab3 button.active {
+	background-color: #ccc;
+}
+.tabcontent3 {
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: white;
+	border-radius: 0 0 5px 5px;
+}
+#Vision3,#Goals3 {
+	display: none;
+}
+
+
+
+/////Staff-4
+.main4{
+	background-color: azure;
+	width: 97%;
+	padding: 10px 50px 50px 50px;
+	border-radius: 5px;
+}
+.main4>h1,.main4>p {
+	text-align: center;
+}
+.main4>p {
+	margin: -20px 0 40px 0;
+}
+.container4 {
+	display: flex;
+	gap: 30px;
+}
+.left4 {
+	width: 30%;
+	height: auto;
+	background-image: url("") !important;
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center;
+	background-color: aliceblue;
+}
+.right4 {
+	width: 70%;
+}
+.tab4 {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	border-radius: 5px 5px 0 0;
+}
+.tab4 button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+.tab4 button:hover {
+	background-color: #ddd;
+}
+.tab4 button.active {
+	background-color: #ccc;
+}
+.tabcontent4 {
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: white;
+	border-radius: 0 0 5px 5px;
+}
+#Vision4,#Goals4 {
+	display: none;
+}
+
+
+
+/////Staff-5
+.main5{
+	background-color: azure;
+	width: 97%;
+	padding: 10px 50px 50px 50px;
+	border-radius: 5px;
+}
+.main5>h1,.main5>p {
+	text-align: center;
+}
+.main5>p {
+	margin: -20px 0 40px 0;
+}
+.container5 {
+	display: flex;
+	gap: 30px;
+}
+.left5 {
+	width: 30%;
+	height: auto;
+	background-image: url("") !important;
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center;
+	background-color: aliceblue;
+}
+.right5 {
+	width: 70%;
+}
+.tab5 {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	border-radius: 5px 5px 0 0;
+}
+.tab5 button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+.tab5 button:hover {
+	background-color: #ddd;
+}
+.tab5 button.active {
+	background-color: #ccc;
+}
+.tabcontent5 {
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: white;
+	border-radius: 0 0 5px 5px;
+}
+#Vision5,#Goals5 {
+	display: none;
+}
+
+
+
+
+/////Staff-6
+.main6{
+	background-color: azure;
+	width: 97%;
+	padding: 10px 50px 50px 50px;
+	border-radius: 5px;
+}
+.main6>h1,.main6>p {
+	text-align: center;
+}
+.main6>p {
+	margin: -20px 0 40px 0;
+}
+.container6 {
+	display: flex;
+	gap: 30px;
+}
+.left6 {
+	width: 30%;
+	height: auto;
+	background-image: url("") !important;
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center;
+	background-color: aliceblue;
+}
+.right6 {
+	width: 70%;
+}
+.tab6 {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	border-radius: 5px 5px 0 0;
+}
+.tab6 button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+.tab6 button:hover {
+	background-color: #ddd;
+}
+.tab6 button.active {
+	background-color: #ccc;
+}
+.tabcontent6 {
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: white;
+	border-radius: 0 0 5px 5px;
+}
+#Vision6,#Goals6 {
+	display: none;
+}
+
+.footercopyright {
+  width: 100%;
+  background: #232f3e;
+  color: #fff;
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
