@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">South Khawbung, Champhai</div>
+          <div class="text-two">Mizoram - 796320</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+91 8259951848</div>
+          <div class="text-two"></div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">chhuanthanga1999@gmail.com</div>
+          <div class="text-two">khawbunghsssamagra@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p></p>
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbxWiKjVmyd1L1aqbJn3XnrW8sn-L0Tr6fJikHI1jmgLxHa3txfKfrt0_q1a9eoiO0SI9g/exec" name="contact-form">
+            <div class="input-box">
+              <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div class="input-box">
+              <input type="number" name="ph" placeholder="Enter your Phone No.">
+            </div>
+            <div class="input-box">
+              <input type="text" name="email" placeholder="Enter your email">
+            </div>
+            <div class="input-box message-box">
+                <input type="text" name="message" placeholder="Enter your message">
+            </div>
+                <div class="submit">
+             <button type="submit">Send Now</button>
+           </div>
+        </form>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxWiKjVmyd1L1aqbJn3XnrW8sn-L0Tr6fJikHI1jmgLxHa3txfKfrt0_q1a9eoiO0SI9g/exec'
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! your form is submitted successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+
+</script>
