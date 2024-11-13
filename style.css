@@ -305,16 +305,17 @@ border-bottom: none;
 .footericon {
   padding-top: 25px;
   margin-top: 20px;
-  width: 100%;
+  width: 100vw;
   left: 0; right: 0;
   background: #1b1b1b;
 }
 
 .footercopyright {
-  width: 100%;
+  width: 100vw;
   background: #1b1b1b;
   color: #fff;
-  padding-top: 16px;
+  font-size: 15px;
+  padding-top: 13px;
   padding-bottom: 25px;
 }
 
