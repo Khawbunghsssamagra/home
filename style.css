@@ -303,16 +303,26 @@ border-bottom: none;
 
 
 .footericon {
-  padding-top: 35px;
+  padding-top: 25px;
   margin-top: 20px;
-  width: 93vw;
-  background: #232f3e;
+  width: 100%;
+  left: 0; right: 0;
+  background: #1b1b1b;
 }
 
 .footercopyright {
-  width: 93vw;
-  background: #232f3e;
+  width: 100%;
+  background: #1b1b1b;
   color: #fff;
   padding-top: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+}
+
+
+.quick-link {
+  text-align: right;
+}
+
+h3 {
+  color: #a17d41;
 }
