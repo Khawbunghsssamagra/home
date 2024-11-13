@@ -138,25 +138,15 @@ header label{
 
 
 
-
-
-.main{
-	background-color: azure;
-	width: 97%;
-	padding: 10px 50px 50px 50px;
-	border-radius: 5px;
-}
-.main>h1,.main>p {
-	text-align: center;
-}
-.main>p {
-	margin: -20px 0 40px 0;
-}
-
-
 .container{
   width: 95%;
   margin-left: 20px;
+}
+h2{
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 35px;
 }
 
 .accordion {
