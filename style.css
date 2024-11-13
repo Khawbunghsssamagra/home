@@ -282,7 +282,6 @@ h2{
 {
     margin: 0px;
     padding: 0px;
-    list-style: inside;
     line-height: 35px;
     color: black;
     padding-bottom: 0px;
@@ -301,11 +300,6 @@ border-bottom: none;
 
 
 
-
-.quick-link {
-  text-align: right;
-}
-
 h3 {
   color: #a17d41;
 }
@@ -318,6 +312,7 @@ h3 {
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
 }
+
 *{
 	margin:0;
 	padding:0;
@@ -411,4 +406,26 @@ ul{
 .copyright {
   color: #fff;
   padding-top: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #27ae60;
+  bottom: 40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
