@@ -434,6 +434,7 @@ html{
 .container2 {
   max-width: 1170px;
 	margin:auto;
+  overflow: hidden;
   border: 5px solid #199700;
   border-radius: 10px;
   box-shadow: 10px 25px 30px rgba(34, 34, 34, 0.3);
