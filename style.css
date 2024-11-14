@@ -146,6 +146,7 @@ section{
   text-align: center;
   line-height: 35px;
 }
+
 h1{
     border-radius: 20px;
     margin-bottom: 10px;
@@ -171,6 +172,7 @@ h1{
 .container{
   width: 93vw;
   margin-left: 10px;
+  margin-top: 100px;
 }
 h2{
   color: #C59F61;
@@ -498,4 +500,74 @@ html{
   height: 1px;
   background: #ffffff;
   display: block;
+}
+
+
+body10{
+  display: grid;
+  place-items: center;
+  margin-top: 120px;
+  font-family: 'Poppins', sans-serif;
+}
+.container10 {
+  width: 95vw;
+  height: 145px;
+  background: #caffc0;
+  color: #000000;
+  border: 2px solid #000000;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+}
+
+.container10 p{
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+.container10 .sub1{
+  font-size: 13px;
+  font-weight: 100;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.container10::after{
+  content: "";
+  position: absolute;
+  background: #000000;
+  width: 100%;
+  height: 75%;
+  left: 0;
+  bottom: 18px;
+  transform-origin: right;
+  transform: skewY(-6deg);
+  opacity: 0.45;
+  filter: blur(4px);
+  z-index: -1;
+}
+.container10::before{
+  content: "";
+  position: absolute;
+  background: #000000;
+  width: 100%;
+  height: 75%;
+  right: 0;
+  bottom: 18px;
+  transform-origin: left;
+  transform: skewY(6deg);
+  opacity: 0.45;
+  filter: blur(4px);
+  z-index: -1;
 }
