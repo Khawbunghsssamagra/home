@@ -9,6 +9,12 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.css"
+      integrity="sha512-kMPqFnKueEwgQFzXLEEl671aHhQqrZLS5IP3HzqdfozaST/EgU+/wkM07JCmXFAt9GO810I//8DBonsJUzGQsQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
       <!-- Linking Google fonts for icons -->
       <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -128,6 +134,95 @@
     </div>
     </div>
 
+
+    <body11>
+        <div class="stats-container">
+            <div class="stat">
+              <div class="subscribers-odometer odometer">0</div>
+              <div class="type">Establishment Year</div>
+            </div>
+      
+            <div class="stat">
+              <div class="videos-odometer odometer plus">0</div>
+              <div class="type">Teaching Staff</div>
+            </div>
+      
+            <div class="stat">
+              <div class="projects-odometer odometer plus website-counter">0</div>
+              <div class="type">Students (2024-25)</div>
+            </div>
+          </div>
+      
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
+            integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+          ></script>
+      
+          <script>
+          const createOdometer = (el, value) => {
+        const odometer = new Odometer({
+          el: el,
+          value: 0,
+          format : 'd'
+        });
+      
+        let hasRun = false;
+      
+        const options = {
+          threshold: [0, 0.9],
+        };
+      
+        const callback = (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              if (!hasRun) {
+                odometer.update(value);
+                hasRun = true;
+              }
+            }
+          });
+        };
+      
+        const observer = new IntersectionObserver(callback, options);
+        observer.observe(el);
+      };
+      
+      const subscribersOdometer = document.querySelector(".subscribers-odometer");
+      createOdometer(subscribersOdometer, 2023);
+      
+      const videosOdometer = document.querySelector(".videos-odometer");
+      createOdometer(videosOdometer, 7);
+      
+      const projectsOdometer = document.querySelector(".projects-odometer");
+      createOdometer(projectsOdometer, 17);
+          </script>
+          
+          <script>
+          var counterContainer = document.querySelector(".website-counter");
+      var resetButton = document.querySelector("#reset");
+      var visitCount = localStorage.getItem("page_view");
+      
+      // Check if page_view entry is present
+      if (visitCount) {
+        visitCount = Number(visitCount) + 1;
+        localStorage.setItem("page_view", visitCount);
+      } else {
+        visitCount = 1;
+        localStorage.setItem("page_view", 1);
+      }
+      counterContainer.innerHTML = visitCount;
+      
+      // Adding onClick event listener
+      resetButton.addEventListener("click", () => {
+        visitCount = 1;
+        localStorage.setItem("page_view", 1);
+        counterContainer.innerHTML = visitCount;
+      });
+          </script> 
+    </body11>
+
     <br><hr /><br>
     <hr /><br>
    <footer class="footer">
@@ -173,6 +268,8 @@
         </div>
     </div>
     <div class="copyright"><center>Copyright &copy; 2023, Khawbung Senior Secondary School. All rights reserved.</center></div>
+<div><center> <a href='http://www.freevisitorcounters.com'>free visitor counters</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=8919b2d0da114f4fe0c9e64f8bd32dcc752abbec'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1267065/t/5"></script></center></div>
 </footer>
 <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
 </body1>

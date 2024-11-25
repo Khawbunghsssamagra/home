@@ -571,3 +571,67 @@ body10{
   filter: blur(4px);
   z-index: -1;
 }
+
+
+.body11 {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.section11 {
+  height: 100vh;
+  background: #fefae0;
+  display: grid;
+  place-items: center;
+  font-size: 90px;
+}
+
+.stats-container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 30px auto;
+  max-width: 1000px;
+  padding-inline: 16px;
+}
+
+.stats-container .stat {
+  background: #c7ebe9;
+  padding: 24px;
+  text-align: center;
+  color: #0000ff;
+}
+
+.stats-container .stat .odometer {
+  font-size: 50px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.stats-container .stat .type {
+  font-size: 20px;
+}
+
+.odometer.plus {
+  position: relative;
+}
+
+.odometer.plus::after {
+  content: "+";
+  position: absolute;
+  top: 0;
+  right: -16px;
+  font-size: 20px;
+}
+
+.stat1 {
+  text-align: center;
+}
+
+
+@media (max-width: 700px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+}
+
