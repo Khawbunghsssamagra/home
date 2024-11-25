@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+html{
+  /*   *****   Storing Colors In Variables   *****  */
+  --body-clr: #f6f9fe;
+  --primary-clr: #05555c;
+  --primary-light-clr: #eaf3fa;
+  --links-clr: #186f78;
+  --text-clr: #3f7277;
+}
+.body1{
+  width: 100%;
+  min-height: 100vh;
+}
+.portfolio{
+  width: 100%;
+  padding: 30px 8%;
+  background-color: var(--body-clr);
+}
+.portfolio .section-head{
+  max-width: 700px;
+  margin: 0px auto 25px;
+  text-align: center;
+}
+.section-head h1{
+  position: relative;
+  font-size: 32px;
+  margin: 10px 0px 5px;
+  color: var(--primary-clr);
+}
+.button-group{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.button-group .button{
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #c8d1d8;
+  color: var(--primary-clr);
+  font-style: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.button-group .button.active{
+  background-color: var(--primary-clr);
+  color: var(--body-clr);
+}
+.button-group .button:hover{
+  background-color: var(--primary-clr);
+  color: var(--body-clr);
+}
+div.gallery{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.gallery .item{
+  position: relative;
+  margin: 4px;
+  width: calc(33.33% - 8px);
+  overflow: hidden;
+  cursor: pointer;
+}
+.item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.3s;
+}
+div.gallery .item:hover img{
+  transform: scale(1.15);
+}
+.item .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5,85,92,0.7);
+  color: var(--body-clr);
+  padding: 15px;
+  overflow: hidden;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+.item:hover .overlay{
+  opacity: 1;
+}
+.item .overlay a{
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid var(--body-clr);
+  color: var(--body-clr);
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.item .overlay a:hover{
+  background-color: var(--body-clr);
+  color: var(--primary-clr);
+}
+
+
+@media(max-width: 1024px){
+  div.gallery .item{
+    width: calc(50% - 8px);
+  }
+}
+
+@media(max-width: 600px){
+  div.gallery .item{
+    width: 100%;
+    margin: 4px 0px;
+  }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+} 
+body {
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+.header-logo img {
+  width: 46px;
+  height: 46px;
+  display: block;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #0c0079;
+  box-shadow: 2px 2px 35px 2px #adad1c;
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo {
+  font-weight: bolder;
+  font-size: 25px;
+  color: #fff;
+
+}
+
+header .navbar ul{
+  list-style: none;
+  color: #fff;
+}
+
+header .navbar ul li{
+  position: relative;
+  float: left;
+  color: #fff;
+}
+
+header .navbar ul li a{
+  font-size: 20px;
+  padding: 20px;
+  color: #fff;
+  display: block;
+}
+
+header .navbar ul li a:hover{
+  background: #007e8f;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+header .navbar ul li ul{
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #0a0066;
+  display: none;
+}
+
+header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+}
+header .navbar ul li ul li ul{
+  left: 200px;
+  top: 0;
+}
+header .navbar ul li:focus-within > ul, 
+header .navbar ul li:hover > ul{
+  display: initial;
+}
+
+#menu-bar {
+  display: none;
+}
+header label{
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+
+@media(max-width:991px){
+  header{
+    padding: 20px;
+  }
+
+  header label{
+    display: initial;
+  }
+
+  header .navbar{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: #0c0079;
+    border-top: 2px solid #ffffff;
+    display: none;
+  }
+
+  header .navbar ul li{
+    width: 100%;
+    text-align: center;
+  }
+
+  header .navbar ul li ul{
+    position: relative;
+    width: 100%;
+  }
+
+  header .navbar ul li ul li{
+    background: #256600;
+  }
+
+  header .navbar ul li ul li ul{
+    width: 100%;
+    left: 0;
+  }
+
+  #menu-bar:checked ~ .navbar{
+    display: initial;
+  }
+
+}
+
+
