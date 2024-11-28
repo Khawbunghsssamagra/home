@@ -306,16 +306,6 @@ body.dark .headquote {
     }
 }
 
-
-.body1 {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    overflow: hidden;
-    }
     .container2 {
     font-size: 10px;
     width: 40em;
@@ -375,15 +365,7 @@ body.dark .headquote {
     }
 
 
-    body.dark .body1 {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: black;
-        overflow: hidden;
-        }
+
         body.dark .container2 {
         font-size: 10px;
         width: 40em;
@@ -497,4 +479,10 @@ body.dark .headquote {
         display: block;
         margin-top: 20px;
     }
+    .container2 {
+        font-size: 6px;
+        width: 40em;
+        height: 40em;
+        position: relative;
+        }
 }
