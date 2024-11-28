@@ -485,4 +485,10 @@ body.dark .headquote {
         height: 40em;
         position: relative;
         }
+    body.dark .container2 {
+        font-size: 6px;
+        width: 40em;
+        height: 40em;
+        position: relative;
+        }
 }
