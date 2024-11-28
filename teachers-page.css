@@ -239,6 +239,74 @@ body.dark .search-field i{
     color: var(--text-color);
 }
 
+.news-list{
+    float: right;
+    background: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    color: rgb(0, 116, 0);
+}
+.headquote {
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    width: 90%;
+}
+.menu-bar
+{
+    background: rgb(0,100,0);
+    background-position: center;
+    text-align: center;
+}
+body.dark .headquote {
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    width: 90%;
+}
+
+
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+}
+
+.loader {
+    width: 140px;
+    height: 140px;
+    border: 15px solid #ccc;
+    border-radius: 50%;
+    border-top: 15px solid orangered;
+    margin: 0 auto;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 @media (max-width: 790px) {
     nav .nav-bar .sidebarOpen{
         display: block;
