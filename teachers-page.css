@@ -492,3 +492,43 @@ body.dark .headquote {
         position: relative;
         }
 }
+
+
+
+.body1 {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container22 {
+  max-width: 1170px;
+	margin:auto;
+  overflow: hidden;
+}
+
+.wrapper22 {
+  width: 100%;
+  display: flex;
+  animation: slide 12s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(0);
+  }
+  38% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-100%);
+  }
+  71% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}

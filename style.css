@@ -96,8 +96,8 @@ header label{
   header{
     float: right;
     padding: 20px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   header label{
