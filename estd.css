@@ -12,8 +12,8 @@ body {
 }
 
 .header-logo img {
-  width: 46px;
-  height: 46px;
+  width: 40px;
+  height: 40px;
   display: block;
   object-fit: contain;
   border-radius: 50%;
@@ -57,9 +57,7 @@ header .navbar ul li a{
 }
 
 header .navbar ul li a:hover{
-  background: #007e8f;
-  border-radius: 50px;
-  color: #ffffff;
+  color: #ffd000;
 }
 
 header .navbar ul li ul{
@@ -96,7 +94,10 @@ header label{
 
 @media(max-width:991px){
   header{
+    float: right;
     padding: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
 
   header label{
@@ -105,15 +106,17 @@ header label{
 
   header .navbar{
     position: absolute;
+    width: 80%;
     top: 100%; left: 0; right: 0;
-    background: #0c0079;
-    border-top: 2px solid #ffffff;
+    background: #1b1b1b;
+    border-top: 1px solid #ffffff;
     display: none;
   }
 
   header .navbar ul li{
     width: 100%;
-    text-align: center;
+    text-align: start;
+    padding-left: 45px;
   }
 
   header .navbar ul li ul{
@@ -121,8 +124,10 @@ header label{
     width: 100%;
   }
 
-  header .navbar ul li ul li{
-    background: #256600;
+  header .navbar ul li ul li a{
+    background: #1b1b1b;
+    padding-left: 0px;
+    color: #49ff8f;
   }
 
   header .navbar ul li ul li ul{
