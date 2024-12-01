@@ -142,18 +142,58 @@
         News and Events
     </div>
 </body1>
+<body123>
+
+ 
+    <div class="home123">
+        <div class="container-123">
+           <div class="row">
+               <div class="home-text">
+                    <p class="animate-text">
+                       <span123><span1 class="date">16-09-2024</span1> Opening date of Scholarship Application for Registration by Students (For Fresh and Renewel) <span class="blinker">(New)</span></span123>
+                       <span123><span1 class="date">14-12-2024</span1> Last date of Scholarship Application for Students <span class="blinker">(New)</span></span123>
+                       <span123><span1 class="date">30-12.2024</span1> Last date for INO level Verification <span class="blinker">(New)</span></span123>
+                       <span123><span1 class="date">15-01-2025</span1> Last date for DNO/SNO level Verification <span class="blinker">(New)</span></span123>
+                    </p>
+               </div>
+           </div>
+        </div>
+    </div>
+    <script>
+        const txts=document.querySelector(".animate-text").children,
+              txtsLen=txts.length;
+          let index=0;
+         const textInTimer=3000,
+               textOutTimer=2800;
+
+        function animateText() {
+           for(let i=0; i<txtsLen; i++){
+             txts[i].classList.remove("text-in","text-out");  
+           }
+           txts[index].classList.add("text-in");
+
+           setTimeout(function(){
+               txts[index].classList.add("text-out");              
+           },textOutTimer)
+
+           setTimeout(function(){
+
+             if(index == txtsLen-1){
+                 index=0;
+               }
+              else{
+                  index++;
+                }
+               animateText();
+           },textInTimer); 
+        }
+        
+        window.onload=animateText;
+  
+</script>
+
+</body123>   
 <body1>
-    <div style="height:80px; overflow:hidden; display:block; -moz-border-radius:4px; -webkit-border-radius:4px;">
-        <marquee behavior="scroll" direction="up" scrollamount="1" style="width:100%; height:100%; vertical-align:middle; cursor:pointer;" onMouseOver="this.setAttribute('scrollamount', 0, 0);this.stop();" OnMouseOut="this.setAttribute('scrollamount', 2, 0);this.start();">
-      
-          <ul id="list">
-            <li id="1" style="margin-bottom:80px; padding-left: 15px; padding-right: 15px; color: #4d3000;"><span1 class="date">16-09-2024</span1> Opening date of Scholarship Application for Registration by Students (For Fresh and Renewel) <span class="blinker">(New)</span></li>
-            <li id="2" style="margin-bottom:80px; padding-left: 15px; padding-right: 15px; color: #4d3000;"><span1 class="date">14-12-2024</span1> Last date of Scholarship Application for Students <span class="blinker">(New)</span></li>
-            <li id="3" style="margin-bottom:80px; padding-left: 15px; padding-right: 15px; color: #4d3000;"><span1 class="date">30-12.2024</span1> Last date for INO level Verification <span class="blinker">(New)</span></li>
-            <li id="4" style="margin-bottom:80px; padding-left: 15px; padding-right: 15px; color: #4d3000;"><span1 class="date">15-01-2025</span1> Last date for DNO/SNO level Verification <span class="blinker">(New)</span></li>
-          </ul>
-        </marquee>
-      </div>
       <div class="news"></div>
 </body1>
 
@@ -198,8 +238,6 @@
     </div>
     </div>
 </body>
-
-
 
 <!----footer-->
 <body1>

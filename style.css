@@ -319,7 +319,7 @@ h2{
 .latest-updates-ul li
 {
   list-style: none;
-    border-bottom: 2px dotted rgb(75, 75, 75);
+  border-bottom: 2px dotted rgb(75, 75, 75);
 }
 .latest-updates-ul li:last-child
 {
@@ -716,4 +716,78 @@ body10{
   font-weight: 600;
   padding-left: 4px;
   padding-right: 4px;
+}
+
+
+.body123{
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container-123{
+  width: 100%;
+  margin:auto;
+}
+
+.home123{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.home123::before{
+  content: '';
+  position: absolute;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.home123 .home-text{
+  position: relative;
+  z-index: 2;
+}
+
+.home123 .home-text p{
+ margin:0;
+ overflow: hidden;
+}
+.home123 .home-text p span123{
+  padding-left: 15px;
+  padding-right: 15px;
+   color:#4d3000;
+   font-weight: 300;
+   display: inline-block;
+   display: none;
+}
+
+.home123 .home-text p span123.text-in{
+ display: block;
+ animation: textIn .5s ease;
+}
+.home123 .home-text p span123.text-out{
+ animation: textOut .5s ease;
+}
+@keyframes textIn{
+ 0%{
+   transform: translateY(100%);
+ }
+ 100%{
+   transform: translateY(0%);
+ }
+}
+@keyframes textOut{
+ 0%{
+   transform: translateY(0%);
+ }
+ 100%{
+   transform: translateY(-100%);
+
+ }
 }
