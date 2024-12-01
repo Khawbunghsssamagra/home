@@ -749,16 +749,16 @@ body10{
   z-index: 1;
 }
 
-.home123 .home-text{
+.home123 .home-text-1{
   position: relative;
   z-index: 2;
 }
 
-.home123 .home-text p{
+.home123 .home-text-1 p{
  margin:0;
  overflow: hidden;
 }
-.home123 .home-text p span123{
+.home123 .home-text-1 p .items123{
   padding-left: 15px;
   padding-right: 15px;
    color:#4d3000;
@@ -767,11 +767,11 @@ body10{
    display: none;
 }
 
-.home123 .home-text p span123.text-in{
+.home123 .home-text-1 p .items123.text-in{
  display: block;
  animation: textIn .5s ease;
 }
-.home123 .home-text p span123.text-out{
+.home123 .home-text-1 p .items123.text-out{
  animation: textOut .5s ease;
 }
 @keyframes textIn{
