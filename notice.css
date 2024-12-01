@@ -201,6 +201,12 @@ h2{
   padding: 10px;
 }
 
-
-
-
+.blinker {
+  animation: blinker .5s linear infinite;
+  color: red;
+}
+@keyframes blinker {
+  50%{
+    opacity: 0;
+  }
+}
