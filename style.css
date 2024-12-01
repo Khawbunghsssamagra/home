@@ -253,6 +253,12 @@ h2{
   margin-right: 15px;
   font-weight: 500;
   border-bottom: 1px solid #cfcfcf;
+  animation-name: nav-link-load;
+  animation-duration: var(--nav-link-load-time);
+  animation-timing-function: ease-in;
+  animation-delay: var(--nav-load-time);
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 
 
@@ -765,6 +771,12 @@ body10{
 .container-123{
   width: 100%;
   margin:auto;
+  animation-name: nav-link-load;
+  animation-duration: var(--nav-link-load-time);
+  animation-timing-function: ease-in;
+  animation-delay: var(--nav-load-time);
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 
 .home123{
