@@ -256,17 +256,17 @@
 
     <body11>
         <div class="stats-container">
-            <div class="stat">
+            <div class="stat js-scroll slide-right">
               <div class="subscribers-odometer odometer">0</div>
               <div class="type">Establishment Year</div>
             </div>
       
-            <div class="stat">
+            <div class="stat js-scroll slide-right">
               <div class="videos-odometer odometer plus">0</div>
               <div class="type">Teaching Staff</div>
             </div>
       
-            <div class="stat">
+            <div class="stat js-scroll slide-right">
               <div class="projects-odometer odometer plus website-counter">0</div>
               <div class="type">Students (2024-25)</div>
             </div>
@@ -341,12 +341,12 @@
       });
           </script> 
     </body11>
-   <footer class="footer">
+   <footer class="footer js-scroll fade-in-bottom">
             <div class="container4"><h6 class="title"><i class='fas fa-graduation-cap' style='font-size:36px'></i></h6></div>
     <br><br>
     <div class="container1">
         <div class="row">
-            <div class="footer-col">
+            <div class="footer-col js-scroll fade-in-bottom">
                 <h4>School</h4>
                 <ul>
                     <li><a href="#">> Home</a></li>
@@ -354,7 +354,7 @@
                     <li><a href="rr.html">> Rules & Regulations</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div class="footer-col js-scroll fade-in-bottom">
                 <h4>About Us</h4>
                 <ul>
                     <li><a href="notice.html">> Notice</a></li>
@@ -362,7 +362,7 @@
                     <li><a href="staff.html">> Teaching Staff</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div class="footer-col js-scroll fade-in-bottom">
                 <h4>Quick Access</h4>
                 <ul>
                     <li><a href="admission.html">> Admission</a></li>
@@ -371,7 +371,7 @@
                     <li><a href="contactus.html">> Contact Us</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div class="footer-col js-scroll fade-in-bottom">
                 <h4>Quick Links</h4>
                 <div class="social-links">
                     <a href="https://www.facebook.com/profile.php?id=61554741159587"><i class="fa fa-facebook"></i></a>
@@ -413,3 +413,47 @@
         });
     }
 </script>
+
+
+<script>
+    const scrollElements = document.querySelectorAll(".js-scroll");
+  
+  const elementInView = (el, dividend = 1) => {
+    const elementTop = el.getBoundingClientRect().top;
+  
+    return (
+      elementTop <=
+      (window.innerHeight || document.documentElement.clientHeight) / dividend
+    );
+  };
+  
+  const elementOutofView = (el) => {
+    const elementTop = el.getBoundingClientRect().top;
+  
+    return (
+      elementTop > (window.innerHeight || document.documentElement.clientHeight)
+    );
+  };
+  
+  const displayScrollElement = (element) => {
+    element.classList.add("scrolled");
+  };
+  
+  const hideScrollElement = (element) => {
+    element.classList.remove("scrolled");
+  };
+  
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (elementInView(el, 1.25)) {
+        displayScrollElement(el);
+      } else if (elementOutofView(el)) {
+        hideScrollElement(el)
+      }
+    })
+  }
+  
+  window.addEventListener("scroll", () => { 
+    handleScrollAnimation();
+  });
+  </script>
