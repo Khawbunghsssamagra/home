@@ -269,7 +269,6 @@ h1{
   p
 {
     color: black;
-    font-size: 18px;
     margin-left: 20px;
 }
 .sub{
@@ -286,15 +285,9 @@ h1{
     color: darkblue;
     padding-left: 30px;
 }
-.p2
-{
-    color: rgb(114, 0, 0);
-    padding-left: 100px;
-}
 .underline
 {
     text-decoration: underline;
-    font-size: 25px;
 }
 .the-end
 {
