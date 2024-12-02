@@ -695,6 +695,11 @@ header .navbar ul li a{
 	font-weight: 500;
 	color: #ffffff;
   }
+  
+  .lang-logo .lang-menu ul a{
+	color: #000000;
+	background-color: #fff;
+  }
   .lang-logo .lang-menu a:hover{
 	background-color: #ffffff;
 	color: rgb(0, 0, 0);
@@ -704,9 +709,9 @@ header .navbar ul li a{
 	color: #000000;
 	position: absolute;
 	background-color: #000000;
-	margin-top: 40px;
+	margin-left: 20px;
   }
   .lang-menu:focus-within > ul, 
   .lang-menu:hover > ul{
 	display: initial;
-  }
+  }  
