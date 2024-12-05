@@ -336,6 +336,8 @@ body.dark .headquote {
     .nav-bar .nav-links{
         flex-direction: column;
         padding-top: 30px;
+        align-items: start;
+        padding-left: 10px;
     }
 
     .nav-links li a{
