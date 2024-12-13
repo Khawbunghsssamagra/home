@@ -32,8 +32,12 @@
 
                 <ul class="nav-links">
                     <li><a href="teachers-page.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                    <li><a href="teachersdata.html"><i class="fas fa-arrows-alt"></i> Teachers Data</a></li>
-                    <li><a href="studentsdata.html"><i class="fas fa-arrows-alt"></i> Students Data</a></li>
+                    <li><a href="calendar.html"><i class='far fa-calendar-alt'></i> School Calendar</a></li>
+                    <li><a href="#" class="nav-link"><i class='fa fa-sitemap'></i> Data <i class='fas fa-caret-down'></i></a>
+                        <ul>
+                            <li class="nav-item"><a href="teachersdata.html"><i class="fas fa-arrows-alt"></i> Teachers Data</a></li>
+                            <li class="nav-item"><a href="studentsdata.html"><i class="fas fa-arrows-alt"></i> Students Data</a></li>
+                        </ul>
                     <li><a href="entermark.html"><i class="fa fa-gear"></i> Enter Mark</a></li>
                     <li><a href="result.html"><i class="fa fa-info-circle"></i> Result</a></li>
                     <li><a href="login.html"><i class='fas fa-power-off'></i> Logout</a></li>
@@ -61,53 +65,53 @@
         </div>
     </nav>
 
-<script>
+    <script>
 
-const body = document.querySelector("body"),
-      nav = document.querySelector("nav"),
-      modeToggle = document.querySelector(".dark-light"),
-      searchToggle = document.querySelector(".searchToggle"),
-      sidebarOpen = document.querySelector(".sidebarOpen"),
-      siderbarClose = document.querySelector(".siderbarClose");
-
-      let getMode = localStorage.getItem("mode");
-          if(getMode && getMode === "dark-mode"){
-            body.classList.add("dark");
-          }
-
-// js code to toggle dark and light mode
-      modeToggle.addEventListener("click" , () =>{
-        modeToggle.classList.toggle("active");
-        body.classList.toggle("dark");
-
-        // js code to keep user selected mode even page refresh or file reopen
-        if(!body.classList.contains("dark")){
-            localStorage.setItem("mode" , "light-mode");
-        }else{
-            localStorage.setItem("mode" , "dark-mode");
-        }
-      });
-
-// js code to toggle search box
-        searchToggle.addEventListener("click" , () =>{
-        searchToggle.classList.toggle("active");
-      });
- 
-      
-//   js code to toggle sidebar
-sidebarOpen.addEventListener("click" , () =>{
-    nav.classList.add("active");
-});
-
-body.addEventListener("click" , e =>{
-    let clickedElm = e.target;
-
-    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
-        nav.classList.remove("active");
-    }
-});
-
-</script>
+        const body = document.querySelector("body"),
+              nav = document.querySelector("nav"),
+              modeToggle = document.querySelector(".dark-light"),
+              searchToggle = document.querySelector(".searchToggle"),
+              sidebarOpen = document.querySelector(".sidebarOpen"),
+              siderbarClose = document.querySelector(".siderbarClose");
+        
+              let getMode = localStorage.getItem("mode");
+                  if(getMode && getMode === "dark-mode"){
+                    body.classList.add("dark");
+                  }
+        
+        // js code to toggle dark and light mode
+              modeToggle.addEventListener("click" , () =>{
+                modeToggle.classList.toggle("active");
+                body.classList.toggle("dark");
+        
+                // js code to keep user selected mode even page refresh or file reopen
+                if(!body.classList.contains("dark")){
+                    localStorage.setItem("mode" , "light-mode");
+                }else{
+                    localStorage.setItem("mode" , "dark-mode");
+                }
+              });
+        
+        // js code to toggle search box
+                searchToggle.addEventListener("click" , () =>{
+                searchToggle.classList.toggle("active");
+              });
+         
+              
+        //   js code to toggle sidebar
+        sidebarOpen.addEventListener("click" , () =>{
+            nav.classList.add("active");
+        });
+        
+        siderbarClose.addEventListener("click" , e =>{
+            let clickedElm = e.target;
+        
+            if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+                nav.classList.remove("active");
+            }
+        });
+        
+        </script>
 <br><br><br>
 <div class="width-100 top-header">
     <div class="container">
@@ -143,6 +147,7 @@ body.addEventListener("click" , e =>{
 
 <style>
   /* ===== Google Font Import - Poppins ===== */
+/* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
@@ -177,6 +182,21 @@ body.dark{
     --search-bar: #242526;
 }
 
+body.dark .headquote {
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    width: 90%;
+}
+
+
+body.dark .nav-links li:hover li a li{
+    background-color: var(--side-nav);
+}
+
 nav{
     position: fixed;
     top: 0;
@@ -199,7 +219,8 @@ nav .nav-bar{
     width: 100%;
     background-color: var(--nav-color);
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 30px;
+    padding-right: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -234,6 +255,7 @@ nav .nav-bar .logo a{
     list-style: none;
 }
 
+
 .nav-links li a{
     position: relative;
     font-size: 17px;
@@ -243,22 +265,30 @@ nav .nav-bar .logo a{
     padding: 10px;
 }
 
-.nav-links li a::before{
+.nav-links li a:hover{
     content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: var(--text-color);
-    opacity: 0;
-    transition: all 0.3s ease;
+    background-color: #393838;
 }
 
 .nav-links li:hover a::before{
     opacity: 1;
+}
+
+.nav-bar .nav-links li ul{
+    position: absolute;
+    line-height: 50px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    background-color: var(--nav-color);
+    display:none;
+}
+
+.nav-links li:focus-within > ul,
+.nav-links li:hover > ul{
+    display: block;
 }
 
 .nav-bar .darkLight-searchBox{
@@ -383,6 +413,22 @@ body.dark .search-field i{
     color: var(--text-color);
 }
 
+body.dark .search-field input{
+    color: var(--text-color);
+}
+
+.search-field i{
+    position: absolute;
+    color: var(--nav-color);
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+body.dark .search-field i{
+    color: var(--text-color);
+}
+
 @media (max-width: 790px) {
     nav .nav-bar .sidebarOpen{
         display: block;
@@ -419,7 +465,7 @@ body.dark .search-field i{
 
     .logo-toggle .siderbarClose{
         color: var(--text-color);
-        font-size: 24px;
+        font-size: 45px;
         cursor: pointer;
     }
 
@@ -433,6 +479,34 @@ body.dark .search-field i{
     .nav-links li a{
         display: block;
         margin-top: 20px;
+    }
+
+    .nav-bar .nav-links li ul{
+        position: absolute;
+        line-height: 50px;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-left: 25px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        background-color: var(--side-nav)
+        display:none;
+    }
+
+    .nav-links li:focus-within > ul,
+    .nav-links li:hover > ul{
+    display: block;
+    position: relative;
+    line-height: 0px;
+    margin-top: 0px;
+    }
+
+    .nav-links li:hover li a{
+        color: var(--nav-color)
+    }
+
+    body.dark .nav-links li:hover li a{
+        color: #FFF;
     }
 }
 </style>

@@ -43,9 +43,23 @@ body.dark .headquote {
     width: 90%;
 }
 
+body.dark .year{
+    color: #fff;
+}
+
+body.dark .table{
+    color: #fff;
+}
 
 body.dark .nav-links li:hover li a li{
     background-color: var(--side-nav);
+}
+
+.table1{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-items: center;
 }
 
 nav{
@@ -264,21 +278,6 @@ body.dark .search-field i{
     color: var(--text-color);
 }
 
-body.dark .search-field input{
-    color: var(--text-color);
-}
-
-.search-field i{
-    position: absolute;
-    color: var(--nav-color);
-    right: 15px;
-    font-size: 22px;
-    cursor: pointer;
-}
-
-body.dark .search-field i{
-    color: var(--text-color);
-}
 
 .news-list{
     float: right;
@@ -305,48 +304,17 @@ body.dark .search-field i{
     background-position: center;
     text-align: center;
 }
-body.dark .headquote {
-    margin-left: 5px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 12px;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    width: 90%;
-}
 
 
-
-.wrapper {
-    width: 100vw;
+.body1 {
+    margin: 0;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #333333;
-}
-
-.loader {
-    width: 140px;
-    height: 140px;
-    border: 15px solid #ccc;
-    border-radius: 50%;
-    border-top: 15px solid orangered;
-    margin: 0 auto;
-    animation: spin 2s linear infinite;
-}
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
+    background-color: black;
+    overflow: hidden;
     }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
     .container2 {
     font-size: 10px;
     width: 40em;
@@ -406,7 +374,15 @@ body.dark .headquote {
     }
 
 
-
+    body.dark .body1 {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        overflow: hidden;
+        }
         body.dark .container2 {
         font-size: 10px;
         width: 40em;
@@ -469,6 +445,10 @@ body.dark .headquote {
         transform: rotate(360deg);
         }
         }
+    
+
+
+
 
 
 @media (max-width: 790px) {
@@ -556,14 +536,13 @@ body.dark .headquote {
         height: 40em;
         position: relative;
         }
-    body.dark .container2 {
-        font-size: 7px;
-        width: 40em;
-        height: 40em;
-        position: relative;
-        }
+        body.dark .container2 {
+            font-size: 7px;
+            width: 40em;
+            height: 40em;
+            position: relative;
+            }    
 }
-
 
 
 .body1 {

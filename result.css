@@ -33,6 +33,21 @@ body.dark{
     --search-bar: #242526;
 }
 
+body.dark .headquote {
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    width: 90%;
+}
+
+
+body.dark .nav-links li:hover li a li{
+    background-color: var(--side-nav);
+}
+
 nav{
     position: fixed;
     top: 0;
@@ -55,7 +70,8 @@ nav .nav-bar{
     width: 100%;
     background-color: var(--nav-color);
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 30px;
+    padding-right: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,6 +106,7 @@ nav .nav-bar .logo a{
     list-style: none;
 }
 
+
 .nav-links li a{
     position: relative;
     font-size: 17px;
@@ -99,22 +116,30 @@ nav .nav-bar .logo a{
     padding: 10px;
 }
 
-.nav-links li a::before{
+.nav-links li a:hover{
     content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: var(--text-color);
-    opacity: 0;
-    transition: all 0.3s ease;
+    background-color: #393838;
 }
 
 .nav-links li:hover a::before{
     opacity: 1;
+}
+
+.nav-bar .nav-links li ul{
+    position: absolute;
+    line-height: 50px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    background-color: var(--nav-color);
+    display:none;
+}
+
+.nav-links li:focus-within > ul,
+.nav-links li:hover > ul{
+    display: block;
 }
 
 .nav-bar .darkLight-searchBox{
@@ -239,6 +264,22 @@ body.dark .search-field i{
     color: var(--text-color);
 }
 
+body.dark .search-field input{
+    color: var(--text-color);
+}
+
+.search-field i{
+    position: absolute;
+    color: var(--nav-color);
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+body.dark .search-field i{
+    color: var(--text-color);
+}
+
 
 .news-list{
     float: right;
@@ -329,7 +370,7 @@ body.dark .headquote {
 
     .logo-toggle .siderbarClose{
         color: var(--text-color);
-        font-size: 24px;
+        font-size: 45px;
         cursor: pointer;
     }
 
@@ -343,5 +384,33 @@ body.dark .headquote {
     .nav-links li a{
         display: block;
         margin-top: 20px;
+    }
+
+    .nav-bar .nav-links li ul{
+        position: absolute;
+        line-height: 50px;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-left: 25px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        background-color: var(--side-nav)
+        display:none;
+    }
+
+    .nav-links li:focus-within > ul,
+    .nav-links li:hover > ul{
+    display: block;
+    position: relative;
+    line-height: 0px;
+    margin-top: 0px;
+    }
+
+    .nav-links li:hover li a{
+        color: var(--nav-color)
+    }
+
+    body.dark .nav-links li:hover li a{
+        color: #FFF;
     }
 }
