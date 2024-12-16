@@ -423,3 +423,23 @@ body.dark .search-field i{
       transform: translateX(-200%);
     }
   }
+
+  body.dark h2{
+    color: #fff;
+  }
+
+  body.dark .table{
+    color: #fff
+  }
+
+  .table{
+    justify-content: center;
+    justify-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;padding-bottom: 5px;
+  }
+
+  body.dark .adms{
+    color: #fff;
+  }
