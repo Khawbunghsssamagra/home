@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en' dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>LogIn</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="registration.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="tittle">LogIn</div>
+            <center>
+                <i class="bi bi-person-circle fs-1 color"></i>
+              </center>
+              <br>
+            <form name="login" onsubmit="return validateForm();" method="post" target="_blank">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details" for="usercode">User Code</span>
+                        <input type="number" name="usercode" placeholder="Kindly Obtain from Principal" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details" for="password">Password</span>
+                        <input type="number" name="password" placeholder="Enter Password" required>
+                    </div>
+                </div><br>
+                <div class="botton">
+                    <input type="button" class="submit" value="LogIn" name="submit" onclick="validate()">
+                </div>
+                <p>Don't have an Account? <a href="registration.html">Register</a></p>
+                <p><a href="index.html">Back to Home Page</a></p>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+
+<script>
+    var count = 2;
+
+function validate ()
+{
+   var usercode = document.login.usercode.value;
+   var password = document.login.password.value;
+   var valid = false;
+   var usercodeArray = ["22794", "22797", "22792", "22796", "22793", "22795", "17906"]
+   var passwordArray = ["22794", "22797", "22792", "22796", "22793", "22795", "17906"]
+   for (var i = 0; i < usercodeArray.length; i++)
+
+if (usercode == usercodeArray[i])
+if (password == passwordArray [i])
+{
+   valid = true;
+   break;
+}
+
+if(valid)
+{
+   alert("Login was successful");
+   window.location = "teachershome.html"
+   return false ;
+}
+var again = "tries";
+if (count ==1)
+{
+   again = "try"
+}
+if(count >= 1)
+{
+   alert("Wrong password or usercode")
+   count--;
+}
+}
+</script>
