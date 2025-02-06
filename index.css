@@ -1269,7 +1269,7 @@ ul li a {
   user-select: none;
   border-radius: 12px;
   text-decoration: none;
-  border: 2px solid transparent;
+  border: 2px solid #0000002a;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
   transition: 0.2s ease;
 }
