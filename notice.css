@@ -309,6 +309,55 @@ nav .navbar .links li .sub-menu li{
 }
 }
 
+/*Notice content*/
+.noti {
+  margin-top: 10px;
+}
+
+.notice {
+  display: flex;
+  margin-bottom: 10px;
+}
+.noti .notice .number {
+  background: #00b3b338;
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  max-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  text-align: center;
+  align-content: center;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.notice .news-list {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.news-list:hover{
+  color: rgb(0, 0, 124);
+}
+
+.notice .news-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.notice .news-list a:hover{
+  color: rgb(0, 0, 124);
+}
+
+.blinker {
+  animation: blinker .5s linear infinite;
+  color: red;
+}
+@keyframes blinker {
+  50%{
+    opacity: 0;
+  }
+}
 
 
 
