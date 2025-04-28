@@ -599,3 +599,14 @@ html{
   display: block;
 }
 /*Footer End*/
+
+
+.blinker {
+    animation: blinker .5s linear infinite;
+    color: rgb(255, 255, 255);
+  }
+  @keyframes blinker {
+    50%{
+      opacity: 0;
+    }
+  }
